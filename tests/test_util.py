@@ -33,7 +33,7 @@ class TestUtil(unittest.TestCase):
             ]
         )
         self.assertEqual(args.language, "typescript")
-        self.assertEqual(args.dc_files, ["test.dc", "test2.dc"])
+        self.assertEqual(args.dc_files, ["sample.dc", "sample2.dc"])
         self.assertEqual(args.out, "build")
         self.assertEqual(args.notify_level, "ERROR")
 
