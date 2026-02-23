@@ -72,6 +72,7 @@ def is_server_field(field):
 def has_owner_init(field):
     return field.isOwnrecv() and field.isRequired()
 
+
 def getArgParser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
 

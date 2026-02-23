@@ -2,6 +2,7 @@ import unittest
 import argparse
 from src.util import getArgParser
 
+
 class TestUtil(unittest.TestCase):
 
     def test_get_arg_parser_return_type(self):
@@ -18,12 +19,19 @@ class TestUtil(unittest.TestCase):
 
     def test_get_arg_parser_custom_values(self):
         parser = getArgParser()
-        args = parser.parse_args([
-            "--language", "typescript",
-            "--dc-files", "test.dc", "test2.dc",
-            "--out", "build",
-            "--notify-level", "ERROR"
-        ])
+        args = parser.parse_args(
+            [
+                "--language",
+                "typescript",
+                "--dc-files",
+                "test.dc",
+                "test2.dc",
+                "--out",
+                "build",
+                "--notify-level",
+                "ERROR",
+            ]
+        )
         self.assertEqual(args.language, "typescript")
         self.assertEqual(args.dc_files, ["test.dc", "test2.dc"])
         self.assertEqual(args.out, "build")
