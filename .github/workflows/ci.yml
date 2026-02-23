@@ -28,6 +28,5 @@ jobs:
       - name: Formatting
         run: python -m black . --check --exclude gens
 
-
       - name: Testing
         run: python -m unittest discover -v -s ./tests -p "test_*.py"
