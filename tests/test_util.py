@@ -24,8 +24,6 @@ class TestUtil(unittest.TestCase):
                 "--language",
                 "typescript",
                 "--dc-files",
-                "test.dc",
-                "test2.dc",
                 "sample.dc",
                 "sample2.dc",
                 "build",
